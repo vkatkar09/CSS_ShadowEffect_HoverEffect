@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Animation</title>
+    <style>
+        div.item1{
+            width:400px;
+            height: 400px;
+            background-color:black;
+            float: left;
+        }
+     div.a {
+         width:50px;
+         height:50px;
+         background-color:teal;
+         border-radius: 25px;
+      margin:0px auto;
+      position: relative;
+      animation-name:user;
+      animation-duration: 10s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      animation-direction: alternate;
+      animation-delay: 0s;
+     }
+     @keyframes user {
+         0%{top:0px;left:0px}
+         30%{left:-160px;top:250px;}
+         40%{left:-80px;top:125px;}
+         60%{top:125px;left:80px;}
+         80%{top:0px;left:0px}
+         100%{left:160px;top:250px;}
+        }
+
+        div.item11{
+            width:400px;
+            height: 400px;
+            background-color:black;
+            /* float:right; */
+            margin:0px auto;
+            
+        }
+     div.a1 {
+         width:50px;
+         height:50px;
+         background-color:teal;
+         border-radius: 25px;
+         margin:0px auto;
+      position: relative;
+      animation-name:R;
+      animation-duration: 10s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      animation-direction: alternate;
+      animation-delay: 0s;
+     }
+
+        @keyframes R {
+         0%{top:300px;left:-160px}
+         30%{left:-160px;top:0px;}
+         40%{left:80px;top:0px;}
+         60%{top:150px;left:80px;}
+         80%{top:150px;left:-160px}
+         100%{left:80px;top:300px;} 
+        }
+  
+
+    </style>
+</head>
+<body>
+    <div class="item1">
+
+            <div class="a"></div>
+    </div>
+    <div class="item11">
+
+        <div class="a1"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+     div.container {
+         width:300px;
+         height:300px;
+         position: relative;
+         overflow: hidden;
+         float: left;
+         margin-right: 10px
+     }
+     div.container a.c1 {
+         display: block;
+         width:300px;
+         height:300px;
+         background-image: url('./img/girl.jpg');
+         background-position: center center
+     }
+     div.container span.shadow1 {
+        display: block;
+         width:300px;
+         height:300px;
+         background-color: black;
+         opacity: 0.7;
+         position: absolute;
+        top:0px;
+        left:-300px;
+        transition: all 1s ease-in-out 0s;
+     }
+
+     div.container:hover span.shadow1{
+      left:0px;
+     }    
+     
+     div.container span.shadow2 {
+        display: block;
+        width:300px;
+        height:300px;
+        background-color: black;
+        opacity: 0.7;
+        position: absolute;
+        right: -300px;
+        bottom: 0px;
+        transition: all 1s ease-in-out 0s;
+     }
+    
+
+     div.container:hover span.shadow2 {
+      right: 0px;
+     }
+
+     div.container span.shadow3 {
+        display: block;
+         width:300px;
+         height:300px;
+         background-color: black;
+         opacity: 0.7;
+         position: absolute;
+        top: -300px;
+        left: 0px;
+        transition: all 1s ease-in-out 0s;
+     }
+    
+
+     div.container:hover span.shadow3 {
+      top: 0px;
+     }
+
+     div.container span.shadow4 {
+        display: block;
+         width:300px;
+         height:300px;
+         background-color: black;
+         opacity: 0.7;
+         position: absolute;
+        bottom: -300px;
+        right: 0px;
+        transition: all 1s ease-in-out 0s;
+     }
+    
+
+     div.container:hover span.shadow4 {
+      bottom: 0px;
+     }
+
+     div.container span.shadow5 {
+        display: block;
+         width:300px;
+         height:300px;
+         background-color: black;
+         opacity: 0.7;
+         position: absolute;
+         top: 0px;  /* right: 0px; */ 
+         left: 0px; /*bottom: 0px; */
+        transition: all 1s ease-in-out 0s;
+     }
+    
+
+     div.container:hover span.shadow5 {
+         top: -300px; /* bottom: 300px; */
+     }
+
+     div.c1{
+         float: left;
+         margin-top: 10px
+     } 
+     
+     div.c1 div.container1 {
+         width:300px;
+         height:300px;
+         position: relative;
+         overflow: hidden;
+         float: left;
+         margin-right: 10px
+     }
+     div.c1 div.container1 a.c1 {
+         display: block;
+         width:300px;
+         height:300px;
+         background-image: url('./img/girl.jpg');
+         background-position: center center
+     }
+
+     div.c1 div.container1 span.shadow6 {
+        display: block;
+         width:300px;
+         height:300px;
+         background-color: black;
+         opacity: 0.7;
+         position: absolute;
+         top: 251px;
+         left:0px;
+        transition: all 1s ease-in-out 0s;
+     }
+     
+     div.c1 div.container1 span.s6t{
+         display: block;
+         width: 300px;
+         height: 300px;
+         position: absolute;
+         top:257px;
+         left:0px;
+         transition: all 1s ease-in-out 0s;
+         color: white;
+         line-height: 20px;
+         margin: 10px;       
+     } 
+     
+     div.c1 div.container1:hover span.shadow6{
+        top: 201px;
+     }
+
+     div.c1 div.container1:hover span.s6t{
+        top: 201px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="c1"></a>
+        <span class="shadow1"></span>
+    </div>
+
+    <div class="container">
+        <a href="#" class="c1"></a>
+        <span class="shadow2"></span>
+    </div>
+
+    <div class="container">
+        <a href="#" class="c1"></a>
+        <span class="shadow3"></span>
+    </div>
+    
+
+    <div class="c1">
+        <div class="container">
+            <a href="#" class="c1"></a>
+            <span class="shadow4"></span>
+        </div>
+
+        <div class="container">
+            <a href="#" class="c1"></a>
+            <span class="shadow5"></span>
+        </div>
+
+        <div class="container1">
+            <a href="#" class="c1"></a>
+            <span class="shadow6"></span>
+            <span class="s6t">What is Lorem Ipsum?<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

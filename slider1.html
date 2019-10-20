@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Image Slider Effects
+    </title>
+    <style>
+        div.container {
+            width: 300px;
+            height: 300px;
+            background: url('./img/1.jpg') no-repeat center center;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-right: 10px;
+        }
+
+        div.container a {
+            display: block;
+            width: 300px;
+            height: 300px;
+        }
+
+        div.container span.dark_shadow {
+            display: block;
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+            position: absolute;
+            top:0px;
+            left:0px;
+            opacity: 0.2;
+             transition: all 1s ease-in-out 0s;
+          }
+
+          div.container:hover span.dark_shadow {
+              top:300px;  /*top se 300px niche shadow push*/
+          }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="#"></a>
+        <span class="dark_shadow"></span>
+    </div>
+    <div class="container">
+        <a href="#"></a>
+        <span class="dark_shadow"></span>
+    </div>
+    <div class="container">
+        <a href="#"></a>
+        <span class="dark_shadow"></span>
+    </div>
+</body>
+
+</html>
